@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/RobotoCondensed-Regular.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: "roboto_bold";
+    src: url(fonts/RobotoCondensed-Bold.ttf) format('opentype');
+}
+
+@keyframes animacao {
+    0% {background-color: var(--cor_001_transparent);}
+    100% {background-color: var(--cor_004);}
+}
+
+@keyframes footer-animation {
+    from {height: 19px;}
+    to {height: 150px;}
+}
+
+@keyframes imgs-animation {
+    0% {opacity: 100%;}
+    100% {opacity: 40%;}
+}
+
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    --font_padrao: 'roboto', cursive;
+    --font_bold: 'roboto_Bold', cursive;
+    --cor_001: #f4f4f9;
+    --cor_001_transparent: #f4f4f973;
+    --cor_002: #CAD2C5;
+    --cor_003: #5DA9E9;
+    --cor_004: #F26419;
+    --cor_005: #42525B;
+
+}
+
+body {
+    margin: 0%;
+    background-image: linear-gradient(to right, #b8dbd9, #586f7c);
+    background-image: url(midias/imagens/backgroundcity001.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    background-color: #42525b;
+    padding: 10px;
+
+}
+
+.perfil {
+    background-color: var(--cor_001_transparent);
+    margin: auto;
+    min-height: auto;
+    max-width: 550px;
+    min-width: 120px;
+    padding: 10px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagens_de_projetos {
+    background-color: var(--cor_001_transparent);
+    max-height: 300px;
+    min-height: 150px;
+    max-width: 300px;
+    min-width: 120px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.desevolvimento {
+    background-color: var(--cor_001_transparent);
+    min-height: 300px;
+    height: auto;
+    max-width: 550px;
+    min-width: 120px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.desevolvimento a{
+    color: var(--cor_005);
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.desevolvimento a:hover{
+    font-size: 30px;
+    color: white;
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.conclusao {
+    background-color: var(--cor_001_transparent);
+    height: auto;
+    min-height: 520px;
+    max-width: 550px;
+    min-width: 120px;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.mamaco {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor_004);
+    max-width: 400px
+}
+
+.redesdetrabalho {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--cor_005);
+    min-width: 120px;
+}
+
+footer:hover {
+    animation-name: footer-animation;
+    animation-duration: 2s;
+    transition-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* edicao de midias*/
+ 
+.fotodeperfil {
+    display: inline;
+    border-radius: 50%;
+    margin: 0%;
+    width: 100%;
+}
+
+.comunidades img:hover {
+    opacity: 0.3;
+    transition-delay: 0.2s;
+}
+
+.redesdetrabalho img {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.porcina img:hover {
+    animation-name: imgs-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.mamaco img {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* edicao de textos */
+
+.textodoperfil {
+    margin: auto;
+    text-align: justify;
+    min-width: 50px;
+    padding: 5px;
+    min-height: 150px;
+}
+
+.desevolvimento > h2 {
+    padding: 10px;
+}
+.desevolvimento > p {
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    min-width: 120px;
+    min-height: 100px;
+}
+
+.conclusao > p {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-family: var(--font_padrao);  
+}
+
+h2 {
+    font-family: var(--font_bold); 
+    font: bold;
+    color: var(--cor_005);
+}
+
+p {
+    font-family: var(--font_padrao);   
+}
+
+
+footer > p {
+    color: white;
+    text-align: center;  
+}
